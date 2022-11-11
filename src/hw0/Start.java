@@ -1,4 +1,4 @@
-package lesson0;
+package hw0;
 
 public class Start {
     public static void main(String[] args) {
