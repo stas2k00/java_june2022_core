@@ -29,17 +29,22 @@ public class Post {
         return this.body;
     }
 
-    public void setUserId(int userId) {
+    public Post setUserId(int userId) {
         this.userId = userId;
+        return this;
     }
-    public void setId(int id) {
+    public Post setId(int id) {
         this.id = id;
+        return this;
     }
-    public void setTitle(String title) {
+    public Post setTitle(String title) {
+
         this.title = title;
+        return this;
     }
-    public void setBody(String body) {
+    public Post setBody(String body) {
         this.body = body;
+        return this;
     }
 
     @Override
