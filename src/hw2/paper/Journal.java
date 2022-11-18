@@ -8,5 +8,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Journal extends Book{
-    private String companyName;
+    private String journalCompany;
+    private String journalName;
+
+    public Journal(String journalCompany, String journalName, String years, int pages) {
+        super(years, pages);
+        this.journalCompany = journalCompany;
+        this.journalName = journalName;
+    }
+    public Journal(String journalCompany, String journalName, String years) {
+        super(years);
+        this.journalCompany = journalCompany;
+        this.journalName = journalName;
+    }
+
 }

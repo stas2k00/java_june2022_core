@@ -8,6 +8,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Ultrabook {
-    private Laptop cpuGpuRam;
-    private final String mode="Power efficient";
+
+
+    private Laptop laptop;
+    private String batteryLife;
+    public Ultrabook(
+            String modelCpu,
+            String modelGpu,
+            String ram,
+            String storageCapacity,
+            String display,
+            String batteryLife
+    ){
+        this.laptop = new Laptop(modelCpu,modelGpu,ram,storageCapacity,display);
+        this.batteryLife = batteryLife;
+    }
 }

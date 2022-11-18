@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class PC {
-    private String cpu;
-    private String gpu;
+    private String modelCpu;
+    private String modelGpu;
+    private String ram;
+    private String storageCapacity;
 }
