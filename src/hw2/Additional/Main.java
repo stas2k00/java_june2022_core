@@ -7,6 +7,7 @@ public class Main {
         ArrayList<Post> arrayOfPosts = GetterData.getPosts();
         ArrayList<Comment> arrayOfComments = GetterData.getComments();
         System.out.println(arrayOfPosts);
+
         for (Comment Comment : arrayOfComments) {
             for (Post Post : arrayOfPosts) {
                 if (Comment.getPostId() == Post.getId()) {
